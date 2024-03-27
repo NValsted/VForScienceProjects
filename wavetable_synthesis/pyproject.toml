@@ -1,0 +1,30 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "NValsted", email = "nicolaj.valsted@live.dk"},
+]
+dependencies = [
+    "numpy>=1.23.1",
+    "sounddevice>=0.4.4",
+]
+requires-python = ">=3.10"
+license = {text = "GPLv3"}
+[project.optional-dependencies]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=22.6.0",
+    "flake8>=4.0.1",
+    "isort>=5.10.1",
+    "ipython>=8.4.0",
+    "plotly>=5.9.0",
+    "pandas>=1.4.3",
+]
